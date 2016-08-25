@@ -1,0 +1,11 @@
+/home/sh/Documents/mynotes-springboot/src/main/java/mynotes/springboot/controller/UserController.java
+/home/sh/Documents/mynotes-springboot/src/main/java/mynotes/springboot/domain/Notes.java
+/home/sh/Documents/mynotes-springboot/src/main/java/mynotes/springboot/domain/Permission.java
+/home/sh/Documents/mynotes-springboot/src/main/java/mynotes/springboot/controller/HomeController.java
+/home/sh/Documents/mynotes-springboot/src/main/java/mynotes/springboot/domain/Role.java
+/home/sh/Documents/mynotes-springboot/src/main/java/mynotes/springboot/service/NotesDao.java
+/home/sh/Documents/mynotes-springboot/src/main/java/mynotes/springboot/controller/NotesController.java
+/home/sh/Documents/mynotes-springboot/src/main/java/mynotes/springboot/service/UserDao.java
+/home/sh/Documents/mynotes-springboot/src/main/java/mynotes/springboot/domain/User.java
+/home/sh/Documents/mynotes-springboot/src/main/java/mynotes/springboot/config/SecurityConfig.java
+/home/sh/Documents/mynotes-springboot/src/main/java/mynotes/springboot/App.java

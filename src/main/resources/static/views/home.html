@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <br><br><br><br><br><br>
+
+        <div class="panel">
+	<div class="heading">
+            <span class="icon mif-loop2" ng-click="tampilkanData()" style="cursor: pointer;"></span>
+		<span class="title">MY NOTES</span>
+                
+                
+	</div>
+	<div class="content">
+            <table style="width: 100%;" class="table">
+			<thead>
+				
+                                <th style="text-align: center;">Tittle</th>
+                                <th style="text-align: center;">Content</th>
+				<th style="text-align: center;">Created_by</th>
+					
+			</thead>
+			<tbody>
+				<tr ng-repeat="notes in data">
+                                    <td style="text-align: center;">{{notes.tittle}}</td>
+                                    <td style="text-align: center;">{{notes.date}}</td>
+                                    <td style="text-align: center;">{{notes.content}}</td>
+                                    <td style="text-align: center;">{{notes.created_by}}</td>
+                                </tr>
+			</tbody>	
+		</table>	
+	</div>
+</div>
+        
+    </body>
+</html>

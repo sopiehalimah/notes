@@ -1,0 +1,11 @@
+mynotes/springboot/service/NotesDao.class
+mynotes/springboot/domain/User.class
+mynotes/springboot/controller/HomeController.class
+mynotes/springboot/controller/NotesController.class
+mynotes/springboot/domain/Notes.class
+mynotes/springboot/config/SecurityConfig.class
+mynotes/springboot/App.class
+mynotes/springboot/domain/Permission.class
+mynotes/springboot/controller/UserController.class
+mynotes/springboot/service/UserDao.class
+mynotes/springboot/domain/Role.class

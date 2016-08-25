@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <br><br><br>
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">today</i>
+              <input id="icon_prefix" type="date" class="validate" name="date" ng-model="model.date">
+              <label for="icon_prefix"></label>
+            </div>
+             </div>
+            <div class="row">
+              <div class="input-field col s12">
+                 <i class="material-icons prefix">loyalty</i>
+                 <input id="icon_prefix" type="text" class="validate" name="tittle" ng-model="model.tittle">
+                 <label for="icon_prefix">Tittle</label>
+              </div>
+            </div>
+            
+            <div class="row">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <textarea id="icon_prefix2" class="materialize-textarea" name="content" ng-model="model.content"></textarea>
+                    <label for="icon_prefix2">Content</label>
+                  </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                 <i class="material-icons prefix">perm_identity</i>
+                 <input id="icon_prefix" type="text" class="validate"  name="created_by" ng-model="model.created_by">
+                 <label for="icon_prefix">Created By</label>
+              </div>
+            </div>
+            <button class="waves-effect waves-light btn" type="submit"  ng-click="simpan(model)"><i class="material-icons left">input</i>Submit</button>
+
+        </form>
+        </div>
+
+    <br><br><br>
+    <a class="waves-effect waves-light btn"  ng-click="tampilkanData()" style="cursor: pointer;"><i class="material-icons left">loop</i>Refresh</a>
+    
+  
+    <br><br><br>    
+    <table class="highlight">
+        <thead style="background-color: #ef6c00; color: #ffffff">
+          
+          <tr>
+             
+              <th style="text-align: center">Tittle</th>
+              <th style="text-align: center">Content</th>
+	      <th style="text-align: center">Created_by</th>
+              <th colspan="2" style="text-align: center">Action</th>
+          </tr>
+        </thead>
+
+        <tbody style="cursor: pointer">
+          <tr ng-repeat="notes in data">
+               <td>{{notes.tittle}}</td>
+               <td>{{notes.content}}</td>
+               <td>{{notes.created_by}}</td>
+               <td style="text-align: center"><button class="waves-effect waves-light btn"   type="submit" ng-click="hapusData(notes.id)"><i class="material-icons left">delete</i></button>
+               <button class="waves-effect waves-light btn"   type="submit" ng-click="editData(notes)"><i class="material-icons left">mode_edit</i></button></td>
+         </tr>
+        </tbody>
+      </table>
+            
+    
+
+
+
+
+    </body>
+
+    <script> 
+   $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+  </script>
+   
+        
+ 
+</html>
+
