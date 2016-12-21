@@ -51,10 +51,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
          protected void configure(HttpSecurity http) throws Exception {
              http
                      .authorizeRequests()
-                        .antMatchers(HttpMethod.GET,"/api/buku/**").hasRole("BUKU_VIEW")
-                        .antMatchers(HttpMethod.POST,"/api/buku/**").hasRole("BUKU_CREATE")
-                        .antMatchers(HttpMethod.DELETE,"/api/buku/**").hasRole("BUKU_DELETE")
-                        .antMatchers(HttpMethod.PUT,"/api/buku/**").hasRole("BUKU_UPDATE")
+                        .antMatchers(HttpMethod.GET,"/api/notes/**").hasRole("NOTES_VIEW")
+                        .antMatchers(HttpMethod.POST,"/api/notes/**").hasRole("NOTES_CREATE")
+                        .antMatchers(HttpMethod.DELETE,"/api/notes/**").hasRole("NOTES_DELETE")
+                        .antMatchers(HttpMethod.PUT,"/api/notes/**").hasRole("NOTES_UPDATE")
                         .antMatchers(HttpMethod.GET,"/api/user/**").hasRole("USER_VIEW")
                         .antMatchers("/lib/**").permitAll()
                         .antMatchers("/scripts/**").permitAll()

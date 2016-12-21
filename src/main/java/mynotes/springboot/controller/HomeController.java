@@ -28,7 +28,6 @@ public class HomeController {
             "/notes",method = RequestMethod.GET)
     Notes getNotes() {
         Notes p = new Notes();
-        p.setDate("01/02/1999");
         p.setTittle("Friendship");
         p.setContent("PG GVTN");
         p.setCreated_by("SH");
@@ -41,13 +40,11 @@ public class HomeController {
         
         List<Notes> notess = new ArrayList<Notes>();
         Notes p = new Notes();
-        p.setDate("01/02/1999");
         p.setTittle("Friendship");
         p.setContent("PG GVTN ");
         p.setCreated_by("SH");
         
         Notes p1 = new Notes();
-        p1.setDate("01/02/1999");
         p1.setTittle("Best Friends");
         p1.setContent("PG GVTN ");
         p1.setCreated_by("SH");

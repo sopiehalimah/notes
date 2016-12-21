@@ -9,10 +9,6 @@ angular.module('aplikasiSpringboot', ['ngRoute'])
 				'templateUrl': 'views/home.html',
 				'controller': 'homeController'
 			})
-                        .when('/addnotes',{
-				'templateUrl': 'views/addnotes.html',
-				'controller': 'homeController'
-			})
                         .when('/admin',{
 				'templateUrl': 'views/admin.html',
 				'controller': 'homeController'

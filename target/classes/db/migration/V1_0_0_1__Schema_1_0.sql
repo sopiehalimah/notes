@@ -12,8 +12,7 @@
 DROP TABLE IF EXISTS `notes`;
 CREATE TABLE `notes`(
 `id` varchar(255) NOT NULL,
-`tittle` varchar(255) NOT NULL,
-`date` varchar(255) NOT NULL,
+`tittle` varchar(255) NOT NULL, 
 `content` varchar(255) NOT NULL,
 `created_by` varchar(255) NOT NULL,
 PRIMARY KEY (`id`)

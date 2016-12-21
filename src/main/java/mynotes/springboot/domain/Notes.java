@@ -24,7 +24,6 @@ public class Notes {
     @GenericGenerator(name= "system-uuid", strategy = "uuid2")
     
     private String id;
-    private String date;
     private String tittle;
     private String content;
     private String created_by;
@@ -37,13 +36,6 @@ public class Notes {
         this.id = id;
     }
     
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
     
     public String getTittle() {
         return tittle;

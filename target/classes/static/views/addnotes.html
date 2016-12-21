@@ -4,18 +4,39 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <div class="row">
+        <form class="col s12">
+            <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">today</i>
+              <input id="icon_prefix" type="date" class="datepicker" name="date" ng-model="model.date">
+              <label for="icon_prefix"></label>
+            </div>
+             </div>
+            <div class="row">
+              <div class="input-field col s12">
+                 <i class="material-icons prefix">loyalty</i>
+                 <input id="icon_prefix" type="text" class="validate" name="tittle" ng-model="model.tittle">
+                 <label for="icon_prefix">Tittle</label>
+              </div>
+            </div>
+            
+            <div class="row">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <textarea id="icon_prefix2" class="materialize-textarea" name="content" ng-model="model.content"></textarea>
+                    <label for="icon_prefix2">Content</label>
+                  </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                 <i class="material-icons prefix">perm_identity</i>
+                 <input id="icon_prefix" type="text" class="validate"  name="created_by" ng-model="model.created_by">
+                 <label for="icon_prefix">Created By</label>
+              </div>
+            </div>
+            <button class="waves-effect waves-light btn" type="submit"  ng-click="simpan(model)"><i class="material-icons left">input</i>Submit</button>
 
-    </head>
-    
-    <body>
-        <br><br><br><br>
-                
-    </body>
-   
- 
-</html>
+        </form>
+        </div>
+

@@ -20,7 +20,6 @@ angular.module('aplikasiSpringboot')
           };
           
           $scope.edit = function(data, index){
-              $scope.model.date = data.date;
               $scope.model.tittle = data.tittle;
               $scope.model.content = data.content;
               $scope.model.created_by = data.created_by;
@@ -75,7 +74,6 @@ angular.module('aplikasiSpringboot')
           $scope.editData = function (data){
               $scope.isDataEdit = true;
               $scope.model = {};
-              $scope.model.date = data.date;
               $scope.model.tittle = data.tittle;
               $scope.model.content = data.content;
               $scope.model.created_by = data.created_by;
